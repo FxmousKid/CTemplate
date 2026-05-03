@@ -17,9 +17,9 @@ set({{CT_PROJECT_NAME}UPPER}_CFLAGS
 	# -fsanitize=undefined
 )
 
-target_compile_definitions({{CT_PROJECT_NAME}} PRIVATE LOGFILE_PATH={{CT_PROJECT_NAME}})
-
 add_executable({{CT_PROJECT_NAME}})
+
+target_compile_definitions({{CT_PROJECT_NAME}} PRIVATE LOGFILE_PATH={{CT_PROJECT_NAME}})
 
 target_include_directories({{CT_PROJECT_NAME}} PRIVATE
 	${CMAKE_CURRENT_SOURCE_DIR}/include
@@ -38,7 +38,7 @@ target_compile_options({{CT_PROJECT_NAME}} PRIVATE
 	${{{CT_PROJECT_NAME}UPPER}_CFLAGS}
 )
 
-target_link_options(a PRIVATE
+target_link_options({{CT_PROJECT_NAME}} PRIVATE
 	${{{CT_PROJECT_NAME}UPPER}_CFLAGS}
 )
 
