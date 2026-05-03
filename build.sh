@@ -20,7 +20,7 @@ repl()
 
 repl_project_name()
 {
-	local CT_PROJECT_NAME_FILES="CMakeLists.txt .gitignore"
+	local CT_PROJECT_NAME_FILES="CMakeLists.txt .gitignore src/utils/misc.c"
 	local project_name
 	printf "%s" "Enter the project name : "
 	read project_name
