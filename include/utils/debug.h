@@ -10,8 +10,8 @@
 # include <stdbool.h>
 # include <unistd.h>
 
-# ifdef LOGFILE_PATH
-#  define LOGFILE_PATH LOGFILE_PATH ".log"
+# ifdef LOGFILE
+#  define LOGFILE_PATH LOGFILE ".log"
 # endif
 # ifndef LOGFILE_PATH
 #  define LOGFILE_PATH	"executable.log"
