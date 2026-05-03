@@ -19,7 +19,7 @@ set({{CT_PROJECT_NAME}UPPER}_CFLAGS
 
 add_executable({{CT_PROJECT_NAME}})
 
-target_compile_definitions({{CT_PROJECT_NAME}} PRIVATE LOGFILE={{CT_PROJECT_NAME}})
+target_compile_definitions({{CT_PROJECT_NAME}} PRIVATE LOGFILE={{CT_PROJECT_NAME}}.log)
 
 target_include_directories({{CT_PROJECT_NAME}} PRIVATE
 	${CMAKE_CURRENT_SOURCE_DIR}/include
