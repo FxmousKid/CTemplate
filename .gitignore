@@ -1,3 +1,9 @@
+# custom
+{{CT_PROJECT_NAME}}
+.compile_commands.json
+build/
+.cache/
+
 # Prerequisites
 *.d
 
