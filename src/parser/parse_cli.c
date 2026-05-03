@@ -19,7 +19,7 @@ opts_handle(struct s_data *ctx, int opt, char *argv[])
 
 	
 	case 'h':
-		printf("help str\n");
+		print_help();
 		return false;
 
 	/* Unknown option */

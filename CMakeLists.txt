@@ -31,6 +31,7 @@ target_sources({{CT_PROJECT_NAME}} PRIVATE
 	src/parser/parse_cli.c
 
 	src/utils/debug.c
+	src/utils/misc.c
 )
 
 
